@@ -1,0 +1,60 @@
+/* tablet, landscape iPad, lo-res laptops and desktops */
+@media screen and (min-width: 961px) {
+
+
+	#signature h2 {
+		display: inline;
+		margin: 0 20px;
+	}
+
+	.project-column {
+		width: 33%;
+		float: left;
+	}
+
+
+
+	/*Adjust sizes according to media query*/
+	.project-description h3 {
+		font-size: 2vw;
+	}
+
+	.project-description p {
+		font-size: 1.4vw;
+	}
+
+	.project-description a {
+		font-size: 1.8vw;
+	}
+
+	.project, .project .front, .project .back {
+		width: calc(22.5vw - 3px); /*pixels include border and scrollbar*/
+		height: calc(22.5vw - 3px); /*pixels include border and scrollbar*/
+	}
+
+	.project-page {
+		width:65%;
+	}
+
+	.project-column {
+		font-size: 22px;
+	}
+
+	.video, .video .front, .video .back {
+		width: calc(30vw - 4px); /*pixels include border and scrollbar*/
+		height: calc(16.875vw - 4px); /*pixels include border and scrollbar*/
+	}
+
+	.video .project-description h3 {
+		font-size: 1.7vw;
+	}
+
+	.video .project-description p {
+		font-size: 1.2vw;
+	}
+
+	.video .project-description a {
+		font-size: 1.4vw;
+	}
+
+}

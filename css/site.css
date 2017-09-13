@@ -1,0 +1,528 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Dynalight);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+*/
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Megrim", sans-serif;
+}
+
+/* Background pattern from Subtle Patterns */
+html {
+	min-height: 100%;
+	background-image: url(../images/backgrounds/gplaypattern.png);
+	/*color: #F78A0E;*/
+	color: #0f0f0f;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	margin-top: 4vh;
+}
+
+/*HIDE SCROLLBARS*/
+/*
+::-webkit-scrollbar { 
+    display: none; 
+}
+*/
+
+.page-width {
+	width: 90vw;
+	margin: 0 auto;
+	height: 66vh;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.headline {
+	margin-bottom: 3vh;
+	font-size: 6vh;
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+/*----------NAVIGATION----------*/
+#navigation-bar {
+	width: calc(100% - 8vh);
+	margin: 0 4vh;
+
+	position: relative;
+}
+
+#logo {
+	height: 10vh;
+}
+
+#navigation {
+	float: right;
+	text-align: center;
+	display: inline;
+	list-style-type: none;
+	padding: 3.5vh 0;
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	max-width: calc(100vw - 18vh);
+}
+
+#navigation li {
+	display: inline;
+	font-size: 3vh;
+	font-weight: bold;
+	margin: 0 20px;
+}
+
+#navigation li a {
+	color: #0f0f0f;
+
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+
+#navigation li a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	border-radius: 2px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+#navigation li a:hover:after {
+	width: 100%;
+	background: #0f0f0f;
+}
+/*------------------------------*/
+
+
+/*----------HOME----------*/
+#signature {
+	position: relative;
+	top: 50%;
+	transform: translateY(-35%);
+}
+
+#signature h1 {
+	font-size: 8vh;
+	margin-bottom: 15px;
+}
+
+#signature h2 {
+	font-size: 4vh;
+	margin-top: 10px;
+}
+
+#signature h1 {
+	-webkit-animation: fadeIn 1.5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeIn 1.5s; /* Firefox < 16 */
+	-ms-animation: fadeIn 1.5s; /* Internet Explorer */
+	-o-animation: fadeIn 1.5s; /* Opera < 12.1 */
+	animation: fadeIn 1.5s;
+}
+
+#sub-software {
+	opacity:0;
+	opacity: 1 \9; /*just in case ie*/
+
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+#sub-media {
+	opacity:0;
+	opacity: 1 \9; /*just in case ie*/
+
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+	
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+#sub-games {
+	opacity:0;
+	opacity: 1 \9; /*just in case ie*/
+
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+	
+	-webkit-animation-delay: 3.5s;
+	-moz-animation-delay: 3.5s;
+	animation-delay: 3.5s;
+}
+
+#linked-in {
+	position: absolute;
+	bottom: 5vh;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 5vh;
+
+	opacity:0;
+	opacity: 1 \9; /*just in case ie*/
+
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.5s;
+	-moz-animation-duration:0.5s;
+	animation-duration:0.5s;
+	
+	-webkit-animation-delay: 4.5s;
+	-moz-animation-delay: 4.5s;
+	animation-delay: 4.5s;
+}
+
+#linked-in img {
+	height: 100%;
+}
+
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+/*------------------------*/
+
+
+/*----------PROJECTS----------*/
+.headline {
+	-webkit-animation: fadeIn 1.5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeIn 1.5s; /* Firefox < 16 */
+	-ms-animation: fadeIn 1.5s; /* Internet Explorer */
+	-o-animation: fadeIn 1.5s; /* Opera < 12.1 */
+	animation: fadeIn 1.5s;
+}
+
+.project {
+	/* (100 / numberOfTiles - 0.5) - 4px */
+	margin: 1px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	transition: background .4s ease, transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.project div div h2 {
+	position: absolute;
+	left: 0%;
+	text-align: center;
+	font-size: 15vw;
+	color: white;
+	opacity: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	background: transparent;
+	transition: opacity .4s ease;
+}
+
+.project div div img {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	display: block;
+	transition: filter .4s ease;
+}
+
+.project-page {
+	width:100%;
+	margin: 0 auto 10vh auto;
+	text-align: justify;
+
+	-webkit-animation: fadeIn 1.5s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadeIn 1.5s; /* Firefox < 16 */
+	-ms-animation: fadeIn 1.5s; /* Internet Explorer */
+	-o-animation: fadeIn 1.5s; /* Opera < 12.1 */
+	animation: fadeIn 1.5s;
+}
+
+
+.project-column {
+	width: 100%;
+	text-align: center;
+}
+
+.project-column li {
+	margin: 10px 0;
+	list-style: none;
+	font-family: "Titillium Web";
+	font-size: 18px;
+}
+
+.projects-image {
+	width: 100%;
+}
+
+.project-page h2 {
+	font-family: "Titillium Web";
+	margin-top: 3vh;
+	font-size: 22px;
+	text-align: center;
+}
+
+.project-page a {
+	font-family: inherit;
+	color: #7ca6d6;
+}
+
+.project-page h3 {
+	margin-top: 30px;
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+.project-page p {
+	font-family: "Titillium Web";
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+/*----------------------------*/
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	float: left;
+}
+
+.flip-container div div img {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	display: block;
+	transition: filter .4s ease;
+}
+
+/* flip the pane when clicked */
+.project.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.project, .project .front, .project .back {
+	width: calc(45vw - 3px);
+	height: calc(45vw - 3px);
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	text-align: center;
+}
+
+.project-description {
+	background-image: url(../images/backgrounds/dark-background.png);
+	/*background: #171233;*/
+	height: 100%;
+	color: white;
+	position: relative;
+}
+
+.project-description div {
+	padding: 0 10px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.project-description h3 {
+	font-size: 4vw;
+	font-weight: bold;
+	font-family: "Titillium Web";
+}
+
+.project-description p {
+	margin: 8px 0;
+	font-size: 3.2vw;
+	font-family: "Titillium Web";
+}
+
+.project-description a {
+	font-size: 4vw;
+	color: #7ca6d6;
+	font-family: "Titillium Web";
+}
+
+
+/*----------VIDEOS----------*/
+.video {
+	width: calc(90vw - 2px);
+	height: 50.625vw;
+	margin: 1px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	transition: background .4s ease, transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.video div div h2 {
+	position: absolute;
+	left: 0%;
+	text-align: center;
+	font-size: 2.4vw;
+	padding: 5px 10px;
+	color: white;
+	opacity: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	background: transparent;
+	transition: opacity .4s ease;
+}
+
+.video div div img {
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	display: block;
+	transition: filter .4s ease;
+}
+
+
+.video.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.video, .video .front, .video .back {
+	width: calc(90vw - 4px);
+	height: 50.625vw;
+}
+
+.video .project-description {
+	background-image: url(../images/backgrounds/padded.png);
+}
+
+.video .project-description h3 {
+	font-size: 5.5vw;
+}
+
+.video .project-description p {
+	font-size: 4vw;
+}
+
+.video .project-description a {
+	font-size: 5vw;
+}
+
+/*--------------------------*/

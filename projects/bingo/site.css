@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand", sans-serif;
+}
+
+html {
+	min-height: 100%;
+    background: #212223;
+}
+
+#body {
+	background-color: transparent;
+	position: relative;
+	margin: 0;
+	width: 100%;
+}
+
+#current-number {
+	font-size: 7vw;
+	text-align: center;
+	margin: 2vw 0;
+	color: white;
+}
+
+.container {
+	width: 90vw;
+	margin: 0 5vw;
+}
+
+.row {
+	width: 10vw;
+	float: left;
+}
+
+.number {
+	font-size: 20px;
+	color: #2f2f2f;
+	background: #ff9900;
+	border-radius: 50%;
+	width: 3vw;
+	height: 3vw;
+	margin: 0.5vw auto;
+	position: relative;
+}
+
+.number p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%); /* IE 9 */
+	-webkit-transform: translate(-50%, -50%); /* Safari */
+	transform: translate(-50%, -50%);
+	font-size: 2vw;
+
+	pointer-events:none;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clearfix:after { 
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#guidelines {
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+}

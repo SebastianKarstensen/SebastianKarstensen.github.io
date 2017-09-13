@@ -1,0 +1,12 @@
+/* hi-res laptops and desktops */
+@media screen and (min-width: 1281px) {
+
+	/*Adjust sizes according to media query*/
+	.project-page {
+		width:50%;
+	}
+
+	.project-column {
+		font-size: 22px;
+	}
+}
