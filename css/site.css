@@ -340,7 +340,7 @@ header {
 	margin: 10px 0;
 	list-style: none;
 	font-family: "Titillium Web";
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .projects-image {
@@ -350,7 +350,7 @@ header {
 .project-page h2 {
 	font-family: "Titillium Web";
 	margin-top: 3vh;
-	font-size: 22px;
+	font-size: 1em;
 	text-align: center;
 }
 
@@ -361,14 +361,14 @@ header {
 
 .project-page h3 {
 	margin-top: 30px;
-	font-size: 26px;
+	font-size: 1.3em;
 	margin-bottom: 5px;
 }
 
 .project-page p {
 	font-family: "Titillium Web";
 	margin-bottom: 10px;
-	font-size: 18px;
+	font-size: 1em;
 }
 
 /*----------------------------*/
