@@ -9,33 +9,49 @@
 
 	<meta name="viewport" content="initial-scale=1">
 
-	<title>WOD Assistant | S. Karstensen</title>
+	<title>WOD Assistant - AMRAPs | S. Karstensen</title>
 
 	<link rel="shortcut icon" href="../../img/website-icon.ico">
 	<link rel="stylesheet" type="text/css" href="site.css">
 </head>
 
 <body id="body" class="container">
-	<header class="clearfix">
-		<div id="time-left">
-			<h4>Time Left</h4>
-			<h4 id="time"></h4>
-		</div>
-		<div id="rounds-completed">
-			<h4>Rounds</h4>
-			<h4 id="rounds"></h4>
-		</div>
-	</header>
-
-	<div id="main-content">
+	<div id="workout-selection">
 		<div>
-			<h4>Current Exercise:<h4>
-			<h1 id="current-exercise">Press to Start Workout</h1>
+			<ul id="workout-list">
+				<!--Workout list will dynamically be added in JS-->
+			</ul>
 		</div>
 	</div>
 
-	<h3>UP NEXT:</h3>
-	<h3 id="next-exercise">...</h3>
+	<div>
+		<header class="clearfix">
+			<div id="time-left">
+				<h4>Time Left</h4>
+				<h4 id="time"></h4>
+			</div>
+			<div id="exercises-recap">
+				<h5>Exercises:</h5>
+				<ul id="exercises">
+					<!--Workout list will dynamically be added in JS-->
+				</ul>
+			</div>
+			<div id="rounds-completed">
+				<h4>Rounds</h4>
+				<h4 id="rounds"></h4>
+			</div>
+		</header>
+
+		<div id="main-content">
+			<div>
+				<h4>Current Exercise:<h4>
+				<h1 id="current-exercise">Press to Start Workout</h1>
+			</div>
+		</div>
+
+		<h3>UP NEXT:</h3>
+		<h3 id="next-exercise">...</h3>
+	</div>
 
 	<script type="text/javascript" src="wod-assistant.js"></script>
 
