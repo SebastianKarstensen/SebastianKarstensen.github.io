@@ -1,0 +1,1 @@
+import"./hoisted.CFLT4bgY.js";document.addEventListener("astro:page-load",()=>{let t=document.getElementsByClassName("project-card");for(let e=0;e<t.length;e++){const a=t[e];a&&a.style.setProperty("--animationDelay",e*.05+"s")}});
